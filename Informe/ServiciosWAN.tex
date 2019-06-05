@@ -1,0 +1,81 @@
+\documentclass{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{blindtext}			% texto sin sentido
+
+\topmargin=-1cm
+\oddsidemargin=-2cm
+\textheight=24cm
+\textwidth=20cm
+
+\title{Los servicios WAN}
+\author{Fernández Agustín, Ferreira Tomás, Formichella Bruno}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Red de área extensa (WAN)}
+Una red de área extensa (Wide Area Network, o WAN) es una red privada de telecomunicaciones geográficamente distribuida que interconecta múltiples redes de área local (LAN). Normalmente, se utiliza un enrutador u otro dispositivo multifunción para conectar una LAN a una WAN. Las WAN corporativas permiten a los usuarios compartir el acceso a aplicaciones, servicios y otros recursos ubicados centralmente. Esto elimina la necesidad de instalar el mismo servidor de aplicaciones, firewall u otro recurso en múltiples ubicaciones, por ejemplo.\par
+Las conexiones WAN pueden incluir tecnologías cableadas e inalámbricas. Los servicios WAN con cable pueden incluir conmutación de etiquetas multiprotocolo, T1s, Carrier Ethernet y enlaces comerciales de banda ancha a internet. Las tecnologías WAN inalámbricas pueden incluir redes de datos celulares como 4G LTE, así como redes públicas Wi-Fi o satelitales.\par
+Las WAN sobre las conexiones de red cableadas siguen siendo el medio preferido para la mayoría de las empresas, pero las tecnologías WAN inalámbricas, basadas en el estándar 4G LTE, están ganando terreno.\par
+La infraestructura WAN puede ser de propiedad privada o arrendada como un servicio de un proveedor de servicios de terceros, como un proveedor de servicios de telecomunicaciones, proveedor de servicios de internet (ISP), operador de red IP privada o compañía de cable. El servicio en sí puede funcionar a través de una conexión dedicada y privada, a menudo respaldada por un acuerdo de nivel de servicio (SLA), o sobre un medio público compartido como internet. Las WANs híbridas emplean una combinación de servicios de red pública y privada.\par
+
+\subsection*{Optimización WAN}
+Las restricciones de latencia y ancho de banda a menudo causan que las WAN de las empresas sufran problemas de rendimiento. Los dispositivos de optimización WAN utilizan una variedad de técnicas para contrarrestarlos, incluyendo la deduplicación, la compresión, la optimización del protocolo, la configuración del tráfico y el almacenamiento en caché local. Los CPE o plataformas SD-WAN proporcionan otro nivel de control de rendimiento de las aplicaciones a través del uso de conexiones de ancho de banda de bajo costo, generalmente en forma de servicios comerciales de internet, junto con la configuración del tráfico y la calidad de las herramientas de servicio.\par
+
+\subsection*{Cablemodem}
+El cablemódem (cable-módem o cable módem) es un tipo especial de módem diseñado para modular y demodular la señal de datos sobre una infraestructura de televisión por cable (CATV).\par
+En telecomunicaciones, Internet por cable es un tipo de acceso de banda ancha a Internet. Este término Internet por cable se refiere a la distribución del servicio de conectividad a Internet sobre la infraestructura de telecomunicaciones.\par
+Los cablemódems se utilizan principalmente para distribuir el acceso a Internet de banda ancha, aprovechando el ancho de banda que no se utiliza en la red de televisión por cable. Los abonados de un mismo vecindario comparten el ancho de banda proporcionado por una única línea de cable coaxial. Por lo tanto, la velocidad de conexión puede variar dependiendo de cuántos equipos están utilizando el servicio al mismo tiempo.\par
+Los cablemódems deben diferenciarse de los antiguos sistemas de redes de área local (LAN), como 10Base2 o 10Base5 que utilizaban cables coaxiales, y especialmente diferenciarse de 10Base36, que realmente utilizaba el mismo tipo de cable que los sistemas CATV.\par
+A menudo, la idea de una línea compartida se considera como un punto débil de la conexión a Internet por cable. Desde un punto de vista técnico, todas las redes, incluyendo los servicios de línea de abonado digital(DSL), comparten una cantidad fija de ancho de banda entre multitud de usuarios; pero ya que las redes cableadas tienden a abarcar áreas más extensas que los servicios DSL, deben tener más cuidado para asegurar un buen rendimiento en la red.\par
+Una debilidad más significativa de las redes de cable al usar una línea compartida es el riesgo de la pérdida de privacidad, especialmente considerando la disponibilidad de herramientas de hacking para cablemódems. De este problema se encarga el cifrado de datos y otras características de privacidad especificadas en el estándar DOCSIS (Data Over Cable Service Interface Specification), utilizado por la mayoría de cablemódems. Existen dos estándares: el EURODOCSIS (mayormente utilizado en Europa) y el DOCSIS. En las especificaciones DOCSIS, la entrada del módem es un cable RG6, con un conector F.\par
+\newpage
+
+\section*{Ventajas}
+\begin{enumerate}
+\item Como todas las tecnologías de redes residenciales (ej: DSL, WiMAX, etc.), una capacidad de canal fija es compartida por un grupo de usuarios (en el caso de Internet por cable, los usuarios en una comunidad comparten la capacidad disponible que provee un solo cable coaxial). Por lo tanto, la velocidad del servicio puede variar dependiendo de la cantidad de personas que usen el servicio al mismo tiempo. No obstante, es muy raro que esto suponga un problema y muy rara vez supone pérdidas de caudal de conexión.
+\item A mayor sea la distancia de entre un repetidor, o booster, de señal por cable coaxial, mayor será la pérdida de señal lo que provocará una disminución en la velocidad de la conexión.
+\item Otro problema son las divisiones de cable por medio de separadores, o splitters, en el domicilio del abonado provocando fallas en el rendimiento de la conexión y en algunos extraños casos la pérdida completa de la señal. Aunque los cablemódems más recientes ya incluyen un enrutador o Router que cumple tal función sin las desventajas del separador de señal (ver enrutador doméstico y Puente\_de\_red).
+\end{enumerate}
+\section*{Desventajas}
+\begin{enumerate}
+\item El rendimiento de la conexión no depende de la distancia de la central, pudiendo llegar fácilmente a las velocidades reales contratadas; esto muy raramente ocurre con ADSL, motivo de queja de muchos clientes.
+\item Una muy baja latencia o Ping respecto a ADSL. Rondando de 5 a 12 ms frente a los +30ms de los ADSL.
+\item ``Información de sobrecarga'' u overhead information (pérdida de caudal útil) menor al de conexiones DSL.
+\item Posibilidad de velocidades superiores a las ADSL.
+\end{enumerate}
+\newpage
+
+\section*{ADSL}
+ADSL es una tecnología de acceso a Internet de banda ancha, lo que implica una velocidad superior a una conexión por módem en la transferencia de datos, ya que el módem utiliza la banda de voz y por tanto impide el servicio de voz mientras se use y viceversa. Esto se consigue mediante una modulación de las señales de datos en una banda de frecuencias más alta que la utilizada en las conversaciones telefónicas convencionales (300 a 3400 Hz), función que realiza el enrutador ADSL. Para evitar distorsiones en las señales transmitidas, se necesita instalar un filtro (discriminador, filtro DSL o splitter) que se encarga de separar la señal telefónica convencional de las señales moduladas de la conexión mediante ADSL.\par
+Esta tecnología se denomina ``asimétrica'' porque las capacidades de descarga (desde la red hasta el usuario) y de subida de datos (en sentido inverso) no coinciden.\par
+En una línea ADSL se establecen tres canales de comunicación:
+\begin{enumerate}
+\item Canal de envío de datos.
+\item Canal de recepción de datos.
+\item Canal de servicio telefónico normal.
+\end{enumerate} \par
+Las empresas de telefonía implantan versiones mejoradas de esta tecnología, como ADSL2 y ADSL2+, con capacidad de suministro de televisión y video de alta calidad por el par telefónico. Supone una dura competencia entre las compañías telefónicas y los cableoperadores, y la aparición de ofertas integradas de voz, datos y televisión, a partir de una misma línea y dentro de una empresa o varias, que ofrezca estos tres servicios de comunicación por un mismo medio: Triple play. El uso de un mayor ancho de banda para estos servicios limita todavía más la distancia a la que pueden funcionar por el par de hilos.
+\newpage
+
+\section*{Ventajas}
+\begin{enumerate}
+\item Ofrece la posibilidad de hablar por teléfono al mismo tiempo que se navega por Internet, porque voz y datos trabajan en bandas separadas por la propia tecnología ADSL y por filtros físicos (splitters y microfiltros).
+\item Utiliza la infraestructura existente de la red telefónica básica. Ventajoso, tanto para los operadores que no tienen que afrontar grandes gastos para la implantación de esta tecnología, como para los usuarios, ya que el costo y el tiempo que tardan en tener disponible el servicio es menor que si el operador tuviese que emprender obras para generar nueva infraestructura.
+\item Ofrece mucha mayor velocidad de conexión que la obtenida mediante marcación telefónica a Internet; de hecho, no se necesita el "marcado" tal como lo conocemos, sino que se conecta independientemente de la conexión tradicional de voz. Este es el aspecto más interesante para los usuarios. En la gran mayoría de escenarios, es la tecnología con mejor relación velocidad/precio.
+\item Cada circuito entre abonado y central es único y exclusivo para ese usuario. Es decir, el cable de cobre que sale del domicilio del abonado llega a la central sin haber sido agregado y, por tanto, evita cuellos de botella por canal compartido, lo cual sí ocurre en otras tecnologías, que utilizan un mismo cable para varios abonados (por ejemplo: el cablemódem).
+\end{enumerate}
+\section*{Desventajas}git 
+\begin{enumerate}
+\item No todas las líneas telefónicas pueden ofrecer este servicio, debido a que las exigencias de calidad del par, tanto de ruido como de atenuación, por distancia a la central, son más estrictas que para el servicio telefónico básico. De hecho, el límite teórico para un servicio aceptable equivale a 5,5 km de longitud de línea; el límite real suele ser del orden de los 3 km.
+\item Debido a los requerimientos de calidad del par de cobre, el servicio no es económico.
+\item La calidad del servicio depende de factores externos, como interferencias en el cable o distancia a la central, al no existir repetidores de señal entre esta y el módem del usuario final. Esto hace que la calidad del servicio fluctúe, provocando en algunos casos cortes y/o disminución de caudal.Este problema no existe en la fibra óptica donde se transmite luz láser en un medio protegido por una cubierta opaca, ya que la luz es inmune a aquéllas interferencias.
+\item Sus capacidades de transmisión son muy inferiores a otras tecnologías como Hybrid Fibre Coaxial (HFC), comúnmente denominado cable coaxial o fibra óptica.
+\end{enumerate}
+\newpage
+
+\end{document}
